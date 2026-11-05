@@ -5,5 +5,5 @@ fun selectProducts(
     recommendedIds: List<Long>,
     excludedIds: List<Long>
 ): List<Product> {
-    TODO("Implement product selection")
+    return ProductSelector(products).select(recommendedIds, excludedIds, recommendedIds.size)
 }
